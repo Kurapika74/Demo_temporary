@@ -1,4 +1,4 @@
-package com.qingniao.freemaker.test;
+package com.qita.freemaker.test;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -11,7 +11,7 @@ import java.util.Map;
 
 import org.junit.Test;
 
-import com.qingniao.core.pojo.user.User;
+import com.qita.core.pojo.user.User;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
@@ -28,7 +28,7 @@ public class FreeMakerTest {
 	  //1创建configurtion对象
 	Configuration configuration=new Configuration();
      //2设置模板存放目录,此处是属性中的绝对路径find/replace快捷键
-	String templateUrl="D:/qn2089/parent/qnsport-console/src/main/webapp/WEB-INF/template/";
+	String templateUrl="D:/21/parent/qita/src/main/webapp/WEB-INF/template/";
      //3加载模板目录和设置读取模板的编码方式
 	configuration.setDirectoryForTemplateLoading(new File(templateUrl));
 	configuration.setDefaultEncoding("utf-8");
@@ -53,7 +53,7 @@ public class FreeMakerTest {
 	//1创建configurtion对象
 	Configuration configuration=new Configuration();
 	//加载模板目录和设置读取模板的编码方式
-	configuration.setDirectoryForTemplateLoading(new File("D:/qn2089/parent/qnsport-console/src/main/webapp/WEB-INF/template/"));
+	configuration.setDirectoryForTemplateLoading(new File("D:/21/parent/qita/src/main/webapp/WEB-INF/template/";));
 	configuration.setDefaultEncoding("utf-8");	
 	//获取模板对象
       Template template = configuration.getTemplate("temp.html");
@@ -79,7 +79,7 @@ public class FreeMakerTest {
 	public void demo3() throws Exception {
 	
  Configuration configuration=new  Configuration ();
- configuration.setDirectoryForTemplateLoading(new File("D:/qn2089/parent/qnsport-console/src/main/webapp/WEB-INF/template/"));
+ configuration.setDirectoryForTemplateLoading(new File("D:/21/parent/qita/src/main/webapp/WEB-INF/template/";));
  configuration.setDefaultEncoding("utf-8");
 //获取模板对象
  Template template = configuration.getTemplate("temp.html");
